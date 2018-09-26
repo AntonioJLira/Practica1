@@ -12,11 +12,11 @@
 
 `git config --global core.editor "gedit"`
 
-##Color de la interfaz:
+## Color de la interfaz:
 
 `git config --global color.ui true`
 
-##Listado de la configuracion:´
+## Listado de la configuracion:´
 
 `git config --list`
 
@@ -64,9 +64,9 @@
 
 `git status`
 
-#Comandos básicos III
+# Comandos básicos III
 
-##Ver diferencia entre ficheros en el directorio y el repositorio de git:
+## Ver diferencia entre ficheros en el directorio y el repositorio de git:
 
 `git diff`
 
