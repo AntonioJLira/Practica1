@@ -4,13 +4,19 @@
 
 `git config --global user.name "Antonio M. Durán Rosal"`
 
-Correo electronico: 
-git config --global user.email aduran@uco.es
-Editor de texto:
-git config --global core.editor "gedit"
-Color de la interfaz:
-git config --global color.ui true
-Listado de la configuracion: ´
-git config --list
-0.3. Uso b´asico
-Los tres estados de Git
+## Correo electronico: 
+
+`git config --global user.email aduran@uco.es`
+
+## Editor de texto:
+
+`git config --global core.editor "gedit"`
+
+##Color de la interfaz:
+
+`git config --global color.ui true`
+
+##Listado de la configuracion:´
+
+`git config --list`
+
