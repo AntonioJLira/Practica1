@@ -48,7 +48,7 @@
 
 `git help log`
 
-## Listar los 5 commits m´as recientes:
+## Listar los 5 commits más recientes:
 
 `git log -n 5`
 
@@ -98,7 +98,7 @@ git commit -m " Mensaje "
 
 `git reset HEAD nombre_fichero`
 
-## Complementar ´ultimo commit:
+## Complementar último commit:
 
 `git commit -- amend -m " Mensaje "`
 
