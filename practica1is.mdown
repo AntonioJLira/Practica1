@@ -53,34 +53,70 @@ principal.
 `git branch -d nombre_rama`
 `git branch -D nombre_rama`
 
-###Integrar ramas a la actual:
 
-`git merge nombre_rama`
+#0.5.    GitHub
+##GitHub no es Git
 
-###Resolver conflictos (se suele hacer manualmente):
+##Comandos GitHub I
 
-`git merge --abort`
+###Añadir repositorio remoto:     
+`git remote add origin url`
 
-##Comandos Ramas III
+###Ver repositorios remotos:  
+`git remote -v`
 
-###Almacenar cambios temporales:
-`git stash save "Mensaje"`
+###Eliminar repositorio remoto:  
+`git remote rm origin`
 
-###Listar cambios:
+###Añadir cambios del repositorio local al remoto: 
+`git push -u origin master`
 
-`git stash list`
+###Añadir cambios del repositorio remoto al local:  
+`git pull`
+##Comandos GitHub II
 
-###Ver contenido de un cambio temporal:
+###Ver branches remotos:  
+`git branch -r`
 
-`git stash show -p nombre_stash`
+###Ver todos los branches:
+`git branch -a`
 
-###Eliminar un cambio temporal:
+###Clonar un repositorio remoto:
+`git clone url`
 
-`git stash drop nombre_stash`
+###Dar seguimiento a branches remotos
+####LOCAL→REMOTO
 
-Aplicar cambio del stash:
+1.  Cambios en el repositorio local.
+2.  Commit de los cambios.
+3.  Añadir cambios a repositorio remoto:
 
-`git stash apply nombre_stash`
+`git push`
 
-`git stash pop nombre_stash`
+####REMOTO→LOCAL
+•Sincronización y unión:
+
+`git fetch origin`  
+`git merge origin/master`
+
+•En un solo paso:  
+`git pull`
+
+####Operaciones con branches remotos
+
+*Creación:
+
+1.  Crear branch local.  
+2.  Hacer cambios en dicho branch.
+3.  Hacer commit.
+4.  Copiar el branch al repositorio remoto:
+
+`git push -u origin branch_remoto`
+
+*Copia:  
+`git checkout -b local remoto`
+
+*Eliminación:  
+`git push origin --delete branch_remoto`
+
 
