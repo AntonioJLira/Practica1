@@ -13,79 +13,79 @@
 `git diff id..id nombre_archivo`
 
 
-#0.4. Ramas
+# 0.4. Ramas
 
-##Ramas o Branches
+## Ramas o Branches
 
 Es la forma para separar la línea actual de desarrollo con respecto a la principal. Normalmente representan versiones del software que posteriormente son integradas a la línea
 principal.
 
-##Comandos Ramas I
+## Comandos Ramas I
 
-###Ver listado de ramas:
+### Ver listado de ramas:
 
 `git branch`
 
-###Crear una rama:
+### Crear una rama:
 
 `git branch nombre_rama`
 
-###Cambiarnos a una rama:
+### Cambiarnos a una rama:
 
 `git checkout nombre_rama`
 
-###Crear una rama y moverse en un paso:
+### Crear una rama y moverse en un paso:
 `git checkout -b nombre_rama`
 
-###Comparar ramas:
+### Comparar ramas:
 `git diff nombre_rama..nombre_rama`
 
-##Comandos Ramas II
-###Ver ramas idénticas a la actual:
+## Comandos Ramas II
+### Ver ramas idénticas a la actual:
 
 `git branch --merged`
 
-###Renombrar ramas:
+### Renombrar ramas:
 `git branch -m nombre_antiguo nombre_nuevo`
 
-##Eliminar ramas:
+## Eliminar ramas:
 
 `git branch -d nombre_rama`
 `git branch -D nombre_rama`
 
 
-#0.5.    GitHub
-##GitHub no es Git
+# 0.5.    GitHub
+## GitHub no es Git
 
-##Comandos GitHub I
+## Comandos GitHub I
 
-###Añadir repositorio remoto:     
+### Añadir repositorio remoto:     
 `git remote add origin url`
 
-###Ver repositorios remotos:  
+### Ver repositorios remotos:  
 `git remote -v`
 
-###Eliminar repositorio remoto:  
+### Eliminar repositorio remoto:  
 `git remote rm origin`
 
-###Añadir cambios del repositorio local al remoto: 
+### Añadir cambios del repositorio local al remoto: 
 `git push -u origin master`
 
-###Añadir cambios del repositorio remoto al local:  
+### Añadir cambios del repositorio remoto al local:  
 `git pull`
-##Comandos GitHub II
+## Comandos GitHub II
 
-###Ver branches remotos:  
+### Ver branches remotos:  
 `git branch -r`
 
-###Ver todos los branches:
+### Ver todos los branches:
 `git branch -a`
 
-###Clonar un repositorio remoto:
+### Clonar un repositorio remoto:
 `git clone url`
 
-###Dar seguimiento a branches remotos
-####LOCAL→REMOTO
+### Dar seguimiento a branches remotos
+#### LOCAL→REMOTO
 
 1.  Cambios en el repositorio local.
 2.  Commit de los cambios.
@@ -93,7 +93,7 @@ principal.
 
 `git push`
 
-####REMOTO→LOCAL
+#### REMOTO→LOCAL
 •Sincronización y unión:
 
 `git fetch origin`  
@@ -102,7 +102,7 @@ principal.
 •En un solo paso:  
 `git pull`
 
-####Operaciones con branches remotos
+#### Operaciones con branches remotos
 
 *Creación:
 
